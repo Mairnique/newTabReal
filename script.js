@@ -5,8 +5,13 @@
 let count = 0;
 let today = new Date();
 let date = today.getDate();
+let month = today.getMonth();
 count = date // 2 - 2;
+let time = (today.getHours()) + ":" + today.getMinutes();
 
+function ShowTime(){
+    document.getElementById("time").innerHTML =  "The date is " + month + "/" + date + ", and the time is " + time + ".";
+}
 function GetWords()
 {   
     let words = new Array(
@@ -26,7 +31,6 @@ function GetWords()
     "大阪（おおさか）","沖縄（おきなわ）","横浜（よこはま）",
     "名古屋（なごや）","本州（ほんしゅう）","四国（しこく）",
     "九州（きゅうしゅう）","太平洋（たいへいよう）","日本海（にほんかい）");
-    let kanji = new Array("一","ni")
     if (count >= words.length / 3){
         count = 1;
     }
@@ -61,39 +65,10 @@ function LinksDate() {
     }
 }
 
-
-const showAll = () => {
+function showAll(){
     document.getElementById("red").style.display = 'block';
     document.getElementById("blue").style.display = 'block';
     document.getElementById("anchor").style.display = 'block';
-    document.getElementsByClassName("container").style.alignItems = "center";
-    document.getElementById("btn").style.display = "none";
+    document.getElementsByClassName("container").style = "center";
+    document.getElementById("btn").style.display = 'none';
 }  
-
-LinksDate();
-
-
-// const show = (classname) => {
-//     const elements = document.getElementById(classname);
-//     for (let i = 0; i < elements.length; i++) {
-//         elements[i].style.display = "block";
-//     }
-// }
-
-
-
-// const setDisplay = (day) => {
-//     if (day == 1) {
-//         show("anchor");
-//     }
-//     else if (day == 2 || day == 4) {
-//         show("blue");
-//     }
-//     else if (day == 3 || day == 5) {
-//         show("red");
-//     }
-// }
-
-// let currDate = new Date();
-// let dayOfTheWeek = currDate.getDay();
-// setDisplay(dayOfTheWeek);
