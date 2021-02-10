@@ -1,0 +1,66 @@
+<!-- # Choose new words button
+# Randomly generate 3 words per day -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="script.js"></script>    
+    </head>
+    <body onLoad="LinksDate(), GetWords()">
+        <section class = "column">
+            <h1>Daily Vocab</h1>
+            <input type="button" id="btnSearch" value="More" onclick="GetWords();"/>
+            <div class="container">
+                <p id="word1"></p>
+                <p id="word2"></p>
+                <p id="word3"></p>
+            </div>
+        </section>
+        <section id = "blue" class = "column">
+            <h1>Blue Links</h1>
+            <div class="links blue">
+                <a class = "links" target="_blank" href="https://us.bbcollab.com/invite/9abcb26d735c4f748a99750f0fab5bb9">English</a>
+                <a class = "links" target="_blank" href="https://us.bbcollab.com/invite/42c23040d91c4e93992f35857b65d158">D / T</a>
+                <a class = "links" target="_blank" href="https://us.bbcollab.com/invite/9bfcc18bf30549b9bd6860a770beaf20">Biology</a>
+                <a class = "links" target="_blank" href="https://us.bbcollab.com/invite/b4fa459624b240618c65cc6e91cc59b2">Math</a>
+                <a class = "links" target="_blank" href="">Link 5</a>
+            </div>
+        </section>
+        <section id = "red" class = "column">
+            <h1>Red Links</h1>
+            <div class="links">
+                <a class = "links" target="_blank" href="https://us.bbcollab.com/invite/6c2276110b9446d0ab1a6970174bc216">CS</a>
+                <a class = "links" target="_blank" href="https://meet.google.com/lookup/aynzqpnzo6?authuser=0&hs=179">Gym</a>
+                <a class = "links" target="_blank" href="https://us.bbcollab.com/invite/119ee6a4b8a64cab9c0b57d1b3338e8b">Japanese</a>
+                <a class = "links" target="_blank" href="">Threshold</a>
+                <a class = "links fri" target="_blank" href="">JCC</a>
+                <a class = "links fri" target="_blank" href="">MBM</a>
+                <a class = "links wed" target="_blank" href="">Dev Club</a>
+                <a class = "links wed" target="_blank" href="">Japan Bowl</a>
+                <a class = "links wed fri" target="_blank" href="">Chorus</a>
+            </div>
+        </section>
+        <section id = "anchor" class = "column">
+            <h1>Anchor</h1>
+            <div class="links">
+                <a class = "links" target="_blank" href="https://us.bbcollab.com/invite/6c2276110b9446d0ab1a6970174bc216">Attendance</a>
+            </div>
+        </section>
+        <input type="button" id="btn" onclick="showAll()" value="Show All" />
+        <!-- <section class="container"></section>>
+            <h1>Quote</h1>
+            <p class="quote">Quote</p>
+        </section> -->
+            
+</body>
+</html>
