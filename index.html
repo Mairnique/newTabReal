@@ -16,11 +16,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <script src="script.js"></script>    
     </head>
-    <body onLoad="LinksDate(), GetWords()">
+    <body onLoad="LinksDate(), GetWords(), ShowTime()">
+        <header>
+            <div class="container">
+                <h1>Hello Maribelle!</h1>
+                
+                <p id="time"><i></i></p>
+            </div>
+        </header>
+        <div class="main">
         <section class = "column">
             <h1>Daily Vocab</h1>
             <input type="button" id="btnSearch" value="More" onclick="GetWords();"/>
-            <div class="container">
+            <div class="container" id="words">
                 <p id="word1"></p>
                 <p id="word2"></p>
                 <p id="word3"></p>
@@ -42,25 +50,20 @@
                 <a class = "links" target="_blank" href="https://us.bbcollab.com/invite/6c2276110b9446d0ab1a6970174bc216">CS</a>
                 <a class = "links" target="_blank" href="https://meet.google.com/lookup/aynzqpnzo6?authuser=0&hs=179">Gym</a>
                 <a class = "links" target="_blank" href="https://us.bbcollab.com/invite/119ee6a4b8a64cab9c0b57d1b3338e8b">Japanese</a>
-                <a class = "links" target="_blank" href="">Threshold</a>
-                <a class = "links fri" target="_blank" href="">JCC</a>
-                <a class = "links fri" target="_blank" href="">MBM</a>
-                <a class = "links wed" target="_blank" href="">Dev Club</a>
-                <a class = "links wed" target="_blank" href="">Japan Bowl</a>
-                <a class = "links wed fri" target="_blank" href="">Chorus</a>
+                <a class = "links" target="_blank" href="">JCC</a>
+                <a class = "links" target="_blank" href="">MBM</a>
+                <a class = "links" target="_blank" href="">Dev Club</a>
+                <a class = "links" target="_blank" href="">Japan Bowl</a>
+                <a class = "links" target="_blank" href="">Chorus</a>
             </div>
         </section>
         <section id = "anchor" class = "column">
             <h1>Anchor</h1>
             <div class="links">
-                <a class = "links" target="_blank" href="https://us.bbcollab.com/invite/6c2276110b9446d0ab1a6970174bc216">Attendance</a>
+                <a class = "links" target="_blank" href="https://tinyurl.com/monday-check-in-2020">Attendance</a>
             </div>
         </section>
+        </div>
         <input type="button" id="btn" onclick="showAll()" value="Show All" />
-        <!-- <section class="container"></section>>
-            <h1>Quote</h1>
-            <p class="quote">Quote</p>
-        </section> -->
-            
-</body>
+    </body>
 </html>
