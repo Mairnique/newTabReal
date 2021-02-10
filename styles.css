@@ -12,21 +12,27 @@
 }
 
 body,html {
-    background-color: var(--black);
-    display: flex;
-    padding: 20px;
+    display: block;
     text-align: center;
     font-size: 20px;
     justify-content: space-evenly;
     height: 100%;
     align-items: top;
     height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: auto;
+    height: 50%;
+    background-image: url("dark_mountain.jpg") !important;
 }
 
 h1 {
     color: var(--yellow);
     font-family: var(--heading-font);
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0px;
     text-align: center;
     padding: 30px;
@@ -54,6 +60,21 @@ a:hover {
     color: var(--yellow);
 }
 
+.main{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#words{
+    width: 340px;
+}
+.column{
+    margin: 10px;
+}
+#time{
+    font-style: italic;
+    font-size: 1rem;
+}
 .blue {
     color: var(--green);
 }
@@ -103,9 +124,19 @@ a:hover {
 }
 
 @media screen and (max-width: 1000px){
-    body {
-        display: block
+
+    html{
+        height: 100%;
     }
+    
+    body {
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+        padding: 0px 100px 0px 100px;
+        display: flexbox;
+        flex-wrap: wrap;
+    }
+
     .links {
         padding: 10px;
         font-family: var(--paragraph-font);
@@ -117,7 +148,7 @@ a:hover {
     }
 
     .links {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     h1 {
@@ -127,7 +158,8 @@ a:hover {
     }
     
     .container{
-        display: block;
+        display: flexbox;
+        flex-wrap: wrap;
     }
 
     #btnSearch {
