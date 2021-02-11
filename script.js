@@ -1,6 +1,3 @@
-// when you click on the words they go to the jisho link
-// How to get the Daily Vocab to show automatically
-// Kanji corner
 
 let count = 0;
 let today = new Date();
@@ -10,7 +7,8 @@ count = date // 2 - 2;
 let time = (today.getHours()) + ":" + today.getMinutes();
 
 function ShowTime(){
-    document.getElementById("time").innerHTML =  "The date is " + month + "/" + date + ", and the time is " + time + ".";
+    document.getElementById("time").innerHTML =  today;
+    // document.getElementById("time").innerHTML =  "The date is " + month + "/" + date + ", and the time is " + time + ".";
 }
 function GetWords()
 {   
