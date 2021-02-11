@@ -1,3 +1,6 @@
+// when you click on the words they go to the jisho link
+// How to get the Daily Vocab to show automatically
+// Kanji corner
 
 let count = 0;
 let today = new Date();
