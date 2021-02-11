@@ -8,7 +8,7 @@
     --green: #2a9d8f;
     --orange: #f4a261;
     --heading-font: 'Montserrat', sans-serif;
-    --paragraph-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Lexend Mega', sans-serif;
 }
 
 body,html {
@@ -94,16 +94,21 @@ a:hover {
     flex-wrap: inherit;
     flex-grow: inherit;
     margin: 10px;
+    align-content: stretch;
 }
 #words{
     width: 280px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
 }
 .column{
     margin: 10px;
 }
 #time{
     font-style: bold;
-    font-size: 1rem;
+    font-size: 1.6rem;
+    padding: 0px 10% 0px 10%;
+    font-family: 'Lexend Mega', sans-serif;
 }
 .blue {
     color: var(--green);
